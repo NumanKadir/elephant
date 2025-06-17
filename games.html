@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elephant Games</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script>
+    function showAnswer() {
+      document.getElementById('answer').style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Elephant Quiz Game</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>What do elephants use their trunks for?</h2>
+    <button onclick="showAnswer()">Show Answer</button>
+    <p id="answer" style="display:none;">To eat, drink, and smell!</p>
+  </main>
+
+  <footer>
+    <p>Keep learning and playing!</p>
+  </footer>
+</body>
+</html>
