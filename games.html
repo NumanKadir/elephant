@@ -6,29 +6,62 @@
   <title>Elephant Games</title>
   <link rel="stylesheet" href="style.css"/>
   <script>
-    function showAnswer() {
-      document.getElementById('answer').style.display = 'block';
+    function showAnswer(id) {
+      document.getElementById(id).style.display = 'block';
     }
   </script>
 </head>
 <body>
-  <header>
-    <h1>Elephant Quiz Game</h1>
+  <header style="background-color: #333; color: white; padding: 15px; display: flex; align-items: center; justify-content: space-between;">
+    <div style="font-size: 1.8em; font-weight: bold;">
+      🧩 Elephant Quiz Time!
+    </div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="gallery.html">Gallery</a>
+      <a href="index.html" style="color: white; margin: 0 10px; text-decoration: none;">Home</a>
+      <a href="gallery.html" style="color: white; margin: 0 10px; text-decoration: none;">Gallery</a>
+      <a href="games.html" style="color: white; margin: 0 10px; text-decoration: none;">Games</a>
+      <a href="about.html" style="color: white; margin: 0 10px; text-decoration: none;">About Us</a>
+      <a href="contact.html" style="color: white; margin: 0 10px; text-decoration: none;">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <h2>What do elephants use their trunks for?</h2>
-    <button onclick="showAnswer()">Show Answer</button>
-    <p id="answer" style="display:none;">To eat, drink, and smell!</p>
+  <main style="padding: 20px;">
+    <h1>🧠 Fun Elephant Questions!</h1>
+
+    <div>
+      <p>1️⃣ What do elephants use their trunks for? 🐘👃🍴</p>
+      <button onclick="showAnswer('a1')">Show Answer</button>
+      <p id="a1" style="display:none;">To eat, drink, and smell! 🥤🍃👃</p>
+    </div>
+
+    <div>
+      <p>2️⃣ How much can an elephant eat in a day? 🍽️</p>
+      <button onclick="showAnswer('a2')">Show Answer</button>
+      <p id="a2" style="display:none;">About 300 pounds (135 kg) of food! That’s a LOT of salad! 🥗🐘</p>
+    </div>
+
+    <div>
+      <p>3️⃣ Do elephants live alone or in groups? 👨‍👩‍👧‍👦</p>
+      <button onclick="showAnswer('a3')">Show Answer</button>
+      <p id="a3" style="display:none;">They live in families called herds! ❤️👨‍👩‍👧‍👦</p>
+    </div>
+
+    <div>
+      <p>4️⃣ Can elephants swim? 🌊🐘</p>
+      <button onclick="showAnswer('a4')">Show Answer</button>
+      <p id="a4" style="display:none;">Yes! Elephants are great swimmers and use their trunks like snorkels! 🏊‍♂️🐘</p>
+    </div>
+
+    <div>
+      <p>5️⃣ What sound does an elephant make? 🔊</p>
+      <button onclick="showAnswer('a5')">Show Answer</button>
+      <p id="a5" style="display:none;">They trumpet! 🎺🐘 It’s loud and proud!</p>
+    </div>
   </main>
 
-  <footer>
-    <p>Keep learning and playing!</p>
+  <footer style="background-color: #333; color: white; padding: 15px; text-align: center;">
+    <a href="index.html" style="color: white; margin: 0 10px; text-decoration: none;">Home</a>
+    <p style="margin-top: 10px;">© 2025 Jumbo’s Jungle</p>
   </footer>
 </body>
 </html>
